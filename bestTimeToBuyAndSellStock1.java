@@ -1,6 +1,6 @@
 public int maxProfit (int[] prices) {
 
-    //brute-force Time:O(n2) Space: O(1)
+    //brute-force - Time:O(n2) - Space: O(1)
     int maxProfit = 0;
 
     for (int i=0; i<prices.length; i++) {
@@ -14,7 +14,7 @@ public int maxProfit (int[] prices) {
 
     return maxProfit;
 
-    //one-pass Time: O(n) Space: O(1)
+    //one-pass - Time: O(n) - Space: O(1)
     int minPrice = Integer.MAX_VALUE;
     int maxProfit = 0;
 

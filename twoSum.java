@@ -1,6 +1,6 @@
 public int[] twoSum(int[] nums, int target) {
     
-    //brute-force
+    //brute-force - Time: O(n^2) - Space: O(1)
     for(int i=0; i<nums.length; i++) {
         for(int j=i+1; j<nums.length; j++) {
             if(nums[i] + nums[j] == target)
@@ -8,7 +8,7 @@ public int[] twoSum(int[] nums, int target) {
         }
     }
 
-    //two-pass hash table
+    //two-pass hash table - Time: O(n) - Space: O(n)
     Map<Integer, Integer> map = new HashMap<>();
 
     for(int i=0; i<nums.length; i++)
@@ -21,7 +21,7 @@ public int[] twoSum(int[] nums, int target) {
             return new int[] {i, map.get(comp)};
     }
 
-    //one-pass hash table
+    //one-pass hash table - Time: O(n) - Space: O(n)
     Map<Integer, Integer> map = new HashMap<>();
 
     for(int i=0; i<nums.length; i++) {
